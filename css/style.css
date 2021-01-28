@@ -200,5 +200,22 @@
   #gnb > ul > li > a {
     color: black;
   }
+/* 메인베너 슬라이더 이미지 영역 */
+  .slider {
+    width: 100%;
+    height: calc(100vh - 68px);
+    position: relative;
+  }
+
+  .slider > img {
+    position: absolute;
+    left: 0; top: 0;
+    opacity: 0;
+    transition-duration: 2s;
+  }
+
+  .slider > img.show {
+    opacity: 1;
+  }
 
   
