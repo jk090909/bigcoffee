@@ -167,4 +167,38 @@
     margin-bottom: 18px;
   }
 
+  /* 메인 메뉴 */
+  #gnb {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    left: 0; top: 0;
+    box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  #gnb > div {
+    height: 68px;
+    /* outline: 1px solid red; */
+  }
+  
+  #gnb > div > .btn_close {
+    position: absolute;
+    right: 20px; top:20px;
+    width: 32px;
+  }
+
+  #gnb > ul > li {
+    /* outline: 1px solid red; */
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  #gnb > ul > li > a {
+    color: black;
+  }
+
   
