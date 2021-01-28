@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>빅커피</title>
+  <title>오시는길 &lt; 빅커피</title>
   <!-- 웹 폰트 -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
   <!-- 사용자 자바스크립트 -->
   <script src="./js/main.js"></script>
 </head>
-<body>
+<body id="location">
   <header id="main_header">
     <button class="btn_toggle">
       <i class="fa fa-bars" aria-hidden="true"></i>
@@ -35,7 +35,7 @@
           <li><a href="#">신제품</a></li>
           <li><a href="#">원두납품상담</a></li>
           <li><a href="#">다른 상품</a></li>
-          <li><a href="">오시는길</a></li>
+          <li><a href="./location.html">오시는길</a></li>
         </ul>
       </nav>
       <a href="./"> 
@@ -45,59 +45,38 @@
     <a href="#" class="btn_right">개설안내</a>
   </header>
 
-  <section id="main_visual">
-    <div class="slider">
-      <img src="./image/banner04@2x.jpg" alt="3">
-      <img src="./image/banner03@2x.jpg" alt="2">
-      <img src="./image/banner02@2x.jpg" alt="1">
-    </div>
-  </section>
-
-  <section id="about">
-      <h2>고객을 위한 우리의 다짐</h2>
-      <p>양질의 다양한 원재료/ 합리적인 가격/ 고객 제일 주의<br>
-         무려 90여종의 카페전문 원두커피 / 카페재료 전문 브랜드
-    </p>
-  </section>
-  <section id="service">
-    <ul>
-      <li>
-        <a href="#">
-        <img src="./image/Icon_brand.svg" alt="브랜드">
-      </a>
-      <p>브랜드</p>
-    </li>
-    <li>
-      <a href="#">
-      <img src="./image/Icon_truck.svg" alt="납품상담">
-    </a>
-    <p>납품상담</p>
-  </li>
-  <li>
-    <a href="#">
-    <img src="./image/Icon_coffee.svg" alt="신제품">
-  </a>
-  <p>신제품</p>
-</li>
-    </ul>
-  </section>
-
-  <section id="brand">
-    <h2>브랜드 홍보</h2>
-    <div>
-    <iframe src="https://www.youtube.com/embed/c8miQqyJszs"
-     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-     gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
-  </div>
-  <div>
-    <iframe src="https://www.youtube.com/embed/KUsMCQIXQdU"
-     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-      gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
-  </div>
-  </section>
-
+   <div id="main">
+       <section>
+           <header>
+               <h1>오시는길</h1>
+           </header>
+           <article>
+               <h2>빅커피 본사 안내</h2>
+               <div id="map">
+                   <!-- 여기에 지도 -->
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.943027725811!2d126.88662031546916!3d37.57995923111668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c996d5a590157%3A0x31bf5aa0622f32fa!2z67mF7Luk7ZS8!5e0!3m2!1sko!2skr!4v1611823578873!5m2!1sko!2skr" width="100%" height="460" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+               </div>
+           </article>
+           <div class="address">
+               <table border="1">
+                   <tr>
+                       <th>주소</th>
+                       <td>서울특별시 마포구 월드컵북로 402 KGIT센터 10층
+                        (오시는길 : 공항철도 디지털미디어시티역 MBC 정류장
+                         하차후 도보 10분)</td>
+                   </tr>
+                   <tr>
+                       <th>대표전화</th>
+                       <td>1577-9660</td>
+                   </tr>
+                   <tr>
+                       <th>팩스</th>
+                       <td>02-6393-0000</td>
+                   </tr>
+               </table>
+           </div>
+       </section>
+   </div>
   <footer id="main_footer">
     <div class="sns">
       <a href="https://www.facebook.com/"><img src="./image/Icon_facebook.svg"
